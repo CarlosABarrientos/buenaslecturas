@@ -23,6 +23,7 @@
         <h4>Todos tus libros deseados al alcance</h4>
         <nav>
             <ul>
+                <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./textos.html">Textos</a></li>
                 <li>Ofertas</li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -35,19 +36,42 @@
 
     <hr>
     <main>
+        <h4>Sección para consultas</h4>
         <form action="https://formspree.io/f/mnndqkre" method="POST">
-            <br>
+            <label for="nombre">Nombre: </label>
             <input type="texto" name="Nombre" id="nombre" placeholder="Ingrese su nombre:">
-            <br>
+
+            <label for="apellido">Apellido: </label>
+            <input type="texto" name="Apellido" id="apellido" placeholder="Ingrese su apellido:"><br>
+            <p> </p>
+            <label for="opciones">Elija tipo de email:</label>
+            <select name="opciones" id="opciones">
+                <option value="opcion2">Laboral</option>
+                <option value="opcion3">Personal</option>
+
+           </select>
+
+            <label for="email"></label>
             <input type="email" name="Email" id="email" placeholder="Ingrese su email:">
-            <br>
-            <textarea name="Consulta" rows="5" cols="30" placeholder="Escriba aquí su consulta"></textarea>
-
-            <br>
-            <input type="submit" name="Submit" id="submit" placeholder="Enviar">
-            <input type="reset" name="Reset" id="reset" placeholder="Restablecer">
-
-
+           <br>
+       
+            
+            <p>Elija su género favorito:</p>
+            <form>
+              <input type="radio" id="ficcion" name="ficcion" value="ficcion">
+              <label for="ficcion">Ficción</label><br>
+              <input type="radio" id="noficcion" name="noficcion" value="noficcion">
+              <label for="css">No ficción</label><br>
+              <input type="radio" id="textos" name="textos" value="textos">
+              <label for="textos">Textos</label>
+              <p>Su consulta:</p>
+              <label for="consulta"></label>
+              <textarea name="Consulta" id="consulta" rows="5" cols="30" placeholder="Escriba aquí su consulta"></textarea>
+  
+              <br>
+              <input type="submit" name="Submit" id="submit" placeholder="Enviar">
+              <input type="reset" name="Reset" id="reset" placeholder="Restablecer"><br>
+            </form>
         </form>  
     </main>
     <footer>
