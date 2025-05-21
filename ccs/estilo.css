@@ -13,7 +13,7 @@ html {
 header {
     width:100vw;
     height: 40%;
-    background-image: url(/img/fondocover.jpg);
+    background-image: url(/img/fondocover.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
